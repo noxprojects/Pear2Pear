@@ -37,13 +37,3 @@ class cRSA:
         signature = base64.b64encode(signature)
 
         return signature
-
-    def verify(self, msg, signature):
-        signature = base64.b64decode(signature)
-        hash = SHA256.new(msg)
-        verifier = pss.new(self.publicKey)
-        try:
-            verifier.verify(hash, signature)
-            print("Authentic")
-        except (ValueError, TypeError):
-            print("Not authentic")
