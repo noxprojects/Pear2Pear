@@ -1,1 +1,2 @@
-src/c2/keys/*
+src/c2/keys/*.pem
+src/c2/__pycache__/

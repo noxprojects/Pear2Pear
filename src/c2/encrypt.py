@@ -5,7 +5,7 @@ from Cryptodome import Random
 from os import path
 import base64
 
-class cRSA:
+class Crypt:
     def __init__(self):
         self.publicKey = None
         self.privateKey = None
